@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Select Your Level - Learn Kazakh</title>
+  <!-- Font Awesome Library for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #002437;
+        color: #fdbd2b;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+    header .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    header .search-icon {
+        font-size: 1.5rem;
+        cursor: pointer;
+        transition: color 0.3s ease;
+    }
+    header .search-icon:hover {
+        color: #ffc93c;
+    }
+    body {
+        font-family: 'Noto Serif', sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(135deg, #00364d 30%, #004f6d 70%);
+        color: #fdbd2b;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        background-image: url('images/vector-office-interior-room-with-desk-cartoon_107791-20715.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+    main {
+        flex: 1; /* Ensures the main section stretches to fill available space */
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.5); /* Adds dark overlay for better text visibility */
+        width: 100%;
+    }
+    .levels {
+        padding: 60px 20px;
+    }
+    .levels h2 {
+        font-size: 2.5rem;
+        margin-bottom: 40px;
+        text-shadow: 2px 2px #002437;
+    }
+    .level-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    .level-btn {
+        background-color: #fdbd2b;
+        color: #00364d;
+        border: none;
+        padding: 20px 40px;
+        font-size: 1.5rem;
+        cursor: pointer;
+        border-radius: 10px;
+        font-weight: bold;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease;
+    }
+    .level-btn:hover {
+        background-color: #ffc93c;
+        transform: scale(1.1);
+    }
+    .back-btn {
+        margin-top: 40px;
+        display: inline-block;
+        background-color: #fdbd2b;
+        color: #00364d;
+        text-decoration: none;
+        padding: 15px 30px;
+        font-size: 1.5rem;
+        border-radius: 10px;
+        font-weight: bold;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease;
+    }
+    .back-btn:hover {
+        background-color: #ffc93c;
+        transform: scale(1.1);
+    }
+    footer {
+        background-color: #002437;
+        color: #fdbd2b;
+        text-align: center;
+        padding: 10px 0;
+        font-size: 1rem;
+        font-weight: bold;
+        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="logo">Learn Kazakh</div>
+  <i class="fas fa-search search-icon" title="Search"></i>
+</header>
+<main>
+  <section class="levels">
+    <h2>Өз деңгейіңізді таңдаңыз:</h2>
+    <div class="level-buttons">
+      <a href="tasks.html?level=A1"><button class="level-btn">A1</button></a>
+      <button class="level-btn">A2</button>
+      <button class="level-btn">B1</button>
+      <button class="level-btn">B2</button>
+      <button class="level-btn">C1</button>
+      <button class="level-btn">C2</button>
+    </div>
+    <a class="back-btn" href="index.html">Басты бетке өту</a>
+  </section>
+</main>
+<footer>© 2024 Learn Kazakh. All rights reserved.</footer>
+</body>
+</html>
